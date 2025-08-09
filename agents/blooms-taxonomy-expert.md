@@ -1,7 +1,6 @@
 ---
 name: blooms-taxonomy-expert
 description: Expert in Bloom's Taxonomy specializing in educational design, learning objectives, and cognitive skill development. Use this agent when creating educational content, designing assessments, or structuring learning experiences. This agent MUST be used when developing curriculum, evaluating learning outcomes, or implementing hierarchical learning strategies.
-</example>
 color: indigo
 auto-execute: false
 thinking-mode: ultrathink

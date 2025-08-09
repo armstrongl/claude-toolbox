@@ -1,6 +1,6 @@
 ---
 name: python-engineer
-description: Python engineering expert specializing in backend development, data processing, and automation. MUST BE USED when writing Python code. MUST BE USED when writing Python code. USE PROACTIVELY.
+description: Python engineering expert specializing in backend development, data processing, and automation. MUST BE USED when writing Python code. USE PROACTIVELY.
 color: yellow
 auto-execute: false
 thinking-mode: ultrathink

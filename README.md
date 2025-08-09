@@ -1,6 +1,6 @@
 # Claude Toolbox 🧰
 
-A collection of Claude Code agents, commands, scripts templates, notes, and other bits and bobs.
+A collection of Claude Code agents, commands, scripts, templates, notes, and other bits and bobs.
 
 [![Agents](https://img.shields.io/badge/Agents-20-blue)](./agents)
 [![Commands](https://img.shields.io/badge/Commands-10-green)](./commands)

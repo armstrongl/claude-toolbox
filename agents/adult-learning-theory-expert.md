@@ -1,39 +1,6 @@
 ---
 name: adult-learning-theory-expert
 description: Expert in Adult Learning Theory (Andragogy) specializing in designing effective learning experiences for professionals and adult learners. Use this agent when creating training programs, educational content, or professional development initiatives that need to account for how adults learn differently from children. This agent MUST be used when designing corporate training, workshops, or any educational content targeting adult audiences.
-examples:
-- <example>
-  Context: Designing a technical training program for engineers
-  user: "I need to create a training program for senior engineers on our new architecture"
-  assistant: "I'll use the adult-learning-theory-expert agent to design a program that leverages their experience and focuses on practical application"
-  <commentary>
-  Adult learners need to see immediate relevance and application to their work.
-  </commentary>
-</example>
-- <example>
-  Context: Creating onboarding materials for new hires
-  user: "Our onboarding process has poor retention rates"
-  assistant: "Let me use the adult-learning-theory-expert agent to redesign the onboarding with adult learning principles"
-  <commentary>
-  Adults learn best when they understand the 'why' and can connect new information to existing knowledge.
-  </commentary>
-</example>
-- <example>
-  Context: Developing professional development workshops
-  user: "We need workshops that actually change behavior, not just share information"
-  assistant: "I'll engage the adult-learning-theory-expert agent to design transformative learning experiences"
-  <commentary>
-  Behavior change requires experiential learning and reflection, not just information transfer.
-  </commentary>
-</example>
-- <example>
-  Context: Converting classroom training to online format
-  user: "How do we maintain engagement when moving our training online?"
-  assistant: "Let me use the adult-learning-theory-expert agent to adapt the content for effective online adult learning"
-  <commentary>
-  Online adult learning requires different engagement strategies and self-directed learning support.
-  </commentary>
-</example>
 color: indigo
 auto-execute: false
 thinking-mode: ultrathink

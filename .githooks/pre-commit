@@ -1,0 +1,77 @@
+#!/bin/bash
+
+# pre-commit hook - Automatically update README badges before commits
+# This hook runs before each commit to ensure badge counts are accurate
+
+set -euo pipefail
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+# Function to print colored output
+print_status() {
+    local color=$1
+    local message=$2
+    echo -e "${color}${message}${NC}" >&2
+}
+
+# Get the repository root
+REPO_ROOT=$(git rev-parse --show-toplevel)
+BADGE_SCRIPT="$REPO_ROOT/scripts/update-badges.sh"
+
+# Check if badge update script exists
+if [[ ! -f "$BADGE_SCRIPT" ]]; then
+    print_status "$YELLOW" "⚠️  Badge update script not found at: $BADGE_SCRIPT"
+    print_status "$YELLOW" "⚠️  Skipping badge update..."
+    exit 0
+fi
+
+# Check if we're adding/removing files from tracked directories
+TRACKED_DIRS=("agents/" "commands/" "templates/" "hooks/")
+NEEDS_UPDATE=false
+
+for dir in "${TRACKED_DIRS[@]}"; do
+    # Check for staged changes in tracked directories
+    if git diff --cached --name-only --diff-filter=A "$dir" | grep -q "\.md$" 2>/dev/null; then
+        print_status "$YELLOW" "📄 Detected new .md files in $dir"
+        NEEDS_UPDATE=true
+    fi
+
+    if git diff --cached --name-only --diff-filter=D "$dir" | grep -q "\.md$" 2>/dev/null; then
+        print_status "$YELLOW" "🗑️  Detected deleted .md files in $dir"
+        NEEDS_UPDATE=true
+    fi
+done
+
+# If no relevant changes, skip update
+if [[ "$NEEDS_UPDATE" == "false" ]]; then
+    print_status "$GREEN" "ℹ️  No changes to tracked directories - skipping badge update"
+    exit 0
+fi
+
+print_status "$YELLOW" "🔄 Updating README badges..."
+
+# Run the badge update script
+if "$BADGE_SCRIPT"; then
+    # Check if README was modified
+    if git diff --quiet README.md; then
+        print_status "$GREEN" "✅ Badges were already up to date"
+    else
+        print_status "$GREEN" "✅ README badges updated successfully"
+        print_status "$YELLOW" "📝 Adding updated README.md to commit..."
+
+        # Stage the updated README
+        git add README.md
+
+        print_status "$GREEN" "🎉 Badge counts updated and staged for commit!"
+    fi
+else
+    print_status "$RED" "❌ Failed to update badges"
+    print_status "$RED" "❌ Commit aborted"
+    exit 1
+fi
+
+exit 0

@@ -28,9 +28,9 @@ Analyze the provided arguments to determine which commands need updating.
    - Directory path: A path to a directory containing commands (e.g., `./project-commands/`)
    - All flag: `--all` to process all commands in the global directory
 2. Build a list of command files to process:
-   - For single/multiple commands: Construct paths as `/Users/larah/.claude/commands/[command-name].md`
+   - For single/multiple commands: Construct paths as `~/.claude/commands/[command-name].md`
    - For directory: Use Glob to find all `.md` files in the specified directory
-   - For --all: Use Glob to find all `.md` files in `/Users/larah/.claude/commands/`
+   - For --all: Use Glob to find all `.md` files in `~/.claude/commands/`
 3. Validate that command files exist:
    - Use LS or Glob to verify file existence
    - Report any missing commands
@@ -183,7 +183,7 @@ Updates all `.md` files in the specified directory.
 ### All Global Commands
 
 `/update-command --all`
-Updates all commands in `/Users/larah/.claude/commands/`.
+Updates all commands in `~/.claude/commands/`.
 
 The command will:
 

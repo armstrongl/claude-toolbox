@@ -100,31 +100,6 @@ First, replace all placeholder text marked with double curly braces (`{{}}`) wit
 ---
 name: {{agent-name}} # The agent name should follow kebab-case formatting conventions, such as code-reviewer, api-architect, or security-auditor.
 description: {{detailed-description-of-when-to-use-this-agent}} # Provide clear triggers and use cases that explain when this agent should be activated. Include "USE PROACTIVELY" if the agent should automatically invoke itself in certain situations. Format the description as "Use this agent when..." followed by specific scenarios that would benefit from this agent's expertise.
-examples: # Provide three concrete examples that demonstrate when users should invoke this agent for optimal results.
-- <example>
-  Context: {{context-description}} # Describe the situation or problem that the user is facing in this scenario.
-  user: "{{user-message}}" # Provide a realistic request or problem statement that a user might present.
-  assistant: "{{assistant-response}}" # Show how the assistant would invoke this specific agent to address the user's needs.
-  <commentary>
-  {{explanation-of-why-this-agent-is-appropriate}} # Explain why this particular agent is the best choice for handling this specific scenario and what unique value it brings.
-  </commentary>
-</example>
-- <example>
-  Context: {{context-description}} # Describe the situation or problem that the user is facing in this scenario.
-  user: "{{user-message}}" # Provide a realistic request or problem statement that a user might present.
-  assistant: "{{assistant-response}}" # Show how the assistant would invoke this specific agent to address the user's needs.
-  <commentary>
-  {{explanation-of-why-this-agent-is-appropriate}} # Explain why this particular agent is the best choice for handling this specific scenario and what unique value it brings.
-  </commentary>
-</example>
-- <example>
-  Context: {{context-description}} # Describe the situation or problem that the user is facing in this scenario.
-  user: "{{user-message}}" # Provide a realistic request or problem statement that a user might present.
-  assistant: "{{assistant-response}}" # Show how the assistant would invoke this specific agent to address the user's needs.
-  <commentary>
-  {{explanation-of-why-this-agent-is-appropriate}} # Explain why this particular agent is the best choice for handling this specific scenario and what unique value it brings.
-  </commentary>
-</example>
 model: {{model-choice}} # Select the appropriate model based on task requirements: opus for complex reasoning and deep analysis, sonnet for balanced performance and general tasks, or haiku for fast and simple operations.
 color: {{color-choice}} # Choose a terminal color for visual distinction: red, blue, green, yellow, magenta, or cyan.
 ---

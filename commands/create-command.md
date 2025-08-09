@@ -10,7 +10,7 @@ parameters:
   - name: location
     type: string
     required: false
-    default: /Users/larah/.claude/commands/
+    default: ~/.claude/commands/
     description: Directory path where the command file should be saved
 author: Larah
 version: 1.1.0
@@ -41,8 +41,8 @@ Thoroughly analyze the user's task description to extract all available informat
    - IF the task mentions "analysis" or "research": Consider thinking-mode: ultrathink.
 4. Note any gaps where you'll need to use best judgment.
 5. If a task is important or critical, use qualifiers like "IMPORTANT" or "CRITICAL" to indicate the importance of the task.
-6. Note any areas where you can use another command in `/Users/larah/.claude/commands/` as a sub-command.
-7. Note any areas where you can use one of the available sub agents in `/Users/larah/.claude/agents/` as a sub-agent.
+6. Note any areas where you can use another command in `~/.claude/commands/` as a sub-command.
+7. Note any areas where you can use one of the available sub agents in `~/.claude/agents/` as a sub-agent.
 
 **Expected Output**:
 Comprehensive understanding of: main objective, required actions, tool needs, execution preferences, inputs/outputs, and constraints.
@@ -134,7 +134,7 @@ Identify where to save the command file based on the provided location parameter
 
 1. Check if a location parameter was provided:
    - IF location parameter exists: Use the provided path.
-   - IF no location parameter: Use default `/Users/larah/.claude/commands/`.
+   - IF no location parameter: Use default `~/.claude/commands/`.
 2. Validate the target directory:
    - Use LS tool to verify the directory exists.
    - IF directory doesn't exist: Create it using Bash mkdir command.
@@ -254,6 +254,6 @@ Examples:
 - `/create-command "Build a command to generate unit tests for JavaScript files" --location /my/custom/commands/`
 - `/create-command "Make a command that searches for TODO comments across a codebase"`
 
-By default, the generated command will be saved to `/Users/larah/.claude/commands/` and will be immediately available for use. If you specify a custom location with `--location`, the command will be saved there instead.
+By default, the generated command will be saved to `~/.claude/commands/` and will be immediately available for use. If you specify a custom location with `--location`, the command will be saved there instead.
 
 Note: The specified directory must exist or will be created if possible. Ensure you have write permissions to the target location.

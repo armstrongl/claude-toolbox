@@ -18,7 +18,7 @@ parameters:
   - name: output_dir
     type: string
     required: false
-    default: /Users/larah/.claude/prompts/
+    default: ~/.claude/prompts/
     description: Directory to save the prompt file.
 author: Larah
 version: 1.0.0
@@ -142,10 +142,10 @@ Examples:
 - `/create-prompt "Create a prompt for writing comprehensive test suites"`
 - `/create-prompt "Build a prompt for refactoring legacy code"`
 
-The generated prompt will be saved to `/Users/larah/.claude/prompts/` by default. You can customize the output directory and complexity level through parameters.
+The generated prompt will be saved to `~/.claude/prompts/` by default. You can customize the output directory and complexity level through parameters.
 
 Parameters:
 
 - `prompt_name`: The filename for your prompt (required)
 - `complexity`: Choose from simple, standard, or advanced (default: standard)
-- `output_dir`: Custom directory path (default: /Users/larah/.claude/prompts/)
+- `output_dir`: Custom directory path (default: ~/.claude/prompts/)

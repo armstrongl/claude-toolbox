@@ -9,15 +9,15 @@ A collection of Claude Code agents, commands, scripts, templates, notes, and oth
 
 ## 🤖 Specialized Agents
 
-Domain expertise becomes accessible through specialized agents that bring deep knowledge and proven methodologies to every interaction. These agents understand the nuances of their respective fields and apply established best practices automatically. Rather than generic assistance, each agent operates with the depth and precision of a seasoned professional in their domain.
+Expert agents provide domain-specific knowledge and methodologies for various development and documentation tasks. These agents cover areas like software architecture, Python/TypeScript development, CLI tools, documentation strategy, learning theory, and critical thinking frameworks. Each agent brings specialized expertise to help solve specific problems rather than providing generic assistance.
 
 ## 💬 Custom Commands
 
-Repetitive tasks consume valuable time that could be spent on creative problem-solving, which makes automation essential for productivity. Custom commands encapsulate complex operations into simple invocations, reducing both effort and error rates. Each command incorporates best practices and intelligent defaults, ensuring consistent quality across executions.
+Commands automate common development and documentation tasks to improve productivity. These include creating scripts, commands, and prompts, updating existing components, generating folder documentation, and extracting essential information from content. Each command streamlines repetitive workflows while maintaining quality and consistency.
 
 ## 🧩 Templates
 
-Consistency across extensions ensures the toolbox remains cohesive as it grows. Templates provide standardized structures for creating new components, establishing patterns that make integration seamless. Each template embodies learned best practices, helping contributors avoid common pitfalls while maintaining compatibility with existing tools.
+Templates provide standardized structures for creating new components consistently. The agent template offers a comprehensive framework for building specialized agents, while other templates (command, hook, prompt) provide starting points for different types of extensions. These templates help maintain consistency and quality across the toolbox.
 
 ## 🤝 Contributing
 

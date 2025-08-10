@@ -136,12 +136,12 @@ Every script must implement these arguments:
    - Development setup
 
 4. Unless otherwise specified, save both files to the default scripts directory:
-   - Ensure the directory `/Users/larah/.dotfiles/.scripts/` exists (create if needed)
-   - Script: `/Users/larah/.dotfiles/.scripts/<script-name>/<script-name>.py` with executable permissions (chmod +x)
-   - README: `/Users/larah/.dotfiles/.scripts/<script-name>/README.md`
-   - requirements.txt: `/Users/larah/.dotfiles/.scripts/<script-name>/requirements.txt` (if third-party dependencies)
+   - Ensure the directory `~/scripts/` exists (create if needed)
+   - Script: `~/scripts/<script-name>/<script-name>.py` with executable permissions (chmod +x)
+   - README: `~/scripts/<script-name>/README.md`
+   - requirements.txt: `~/scripts/<script-name>/requirements.txt` (if third-party dependencies)
 
-5. Update the `/Users/larah/.dotfiles/.scripts/README.md` file to include the new script name and description.
+5. Update the `~/scripts/README.md` file to include the new script name and description.
 
 6. If verbose mode was requested, also display:
    - Summary of what was created
@@ -586,8 +586,8 @@ Examples:
 - `/create-python-script file-organizer`
 
 The command will create:
-1. An executable Python script: `/Users/larah/.dotfiles/.scripts/<script-name>/<script-name>.py`
-2. A comprehensive README file: `/Users/larah/.dotfiles/.scripts/<script-name>/README.md`
-3. A requirements.txt file (if needed): `/Users/larah/.dotfiles/.scripts/<script-name>/requirements.txt`
+1. An executable Python script: `~/scripts/<script-name>/<script-name>.py`
+2. A comprehensive README file: `~/scripts/<script-name>/README.md`
+3. A requirements.txt file (if needed): `~/scripts/<script-name>/requirements.txt`
 
 The generated script follows Python best practices including PEP 8 style, type hints, proper logging, and comprehensive error handling. The scripts directory will be created if it doesn't exist.

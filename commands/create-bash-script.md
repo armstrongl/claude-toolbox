@@ -114,12 +114,12 @@ Every script must implement these flags:
    - Contributing guidelines
 
 4. Unless otherwise specified, save both files to the default scripts directory:
-   - Ensure the directory `/Users/larah/.dotfiles/.scripts/` exists (create if needed)
-   - Script: `/Users/larah/.dotfiles/.scripts/<script-name>/<script-name>.sh` with executable permissions (chmod +x)
-   - README: `/Users/larah/.dotfiles/.scripts/<script-name>/README.md`
-   - Changelog: `/Users/larah/.dotfiles/.scripts/<script-name>/CHANGELOG.md`
+   - Ensure the directory `~/scripts/` exists (create if needed)
+   - Script: `~/scripts/<script-name>/<script-name>.sh` with executable permissions (chmod +x)
+   - README: `~/scripts/<script-name>/README.md`
+   - Changelog: `~/scripts/<script-name>/CHANGELOG.md`
 
-5. Update the `/Users/larah/.dotfiles/.scripts/README.md` file to include the new script name and description.
+5. Update the `~/scripts/README.md` file to include the new script name and description.
 
 6. If verbose mode was requested, also display:
    - Summary of what was created
@@ -401,10 +401,6 @@ Run with `--verbose` flag to see detailed execution information:
 3. Make your changes
 4. Submit a pull request
 
-## License
-
-[LICENSE_TYPE]
-
 ## Changelog
 
 - v1.0.0 - Initial release
@@ -425,8 +421,8 @@ Examples:
 - `/create-bash-script cleanup-logs`
 
 The command will create:
-1. An executable bash script: `/Users/larah/.dotfiles/.scripts/<script-name>/<script-name>.sh`
-2. A comprehensive README file: `/Users/larah/.dotfiles/.scripts/<script-name>/README.md`
-3. A changelog file: `/Users/larah/.dotfiles/.scripts/<script-name>/CHANGELOG.md`
+1. An executable bash script: `~/scripts/<script-name>/<script-name>.sh`
+2. A comprehensive README file: `~/scripts/<script-name>/README.md`
+3. A changelog file: `~/scripts/<script-name>/CHANGELOG.md`
 
 Both files will follow best practices and include all standard flags and proper error handling. The scripts directory will be created if it doesn't exist.

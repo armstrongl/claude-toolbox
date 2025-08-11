@@ -2,7 +2,7 @@
 
 A collection of Claude Code agents, commands, scripts, templates, notes, and other bits and bobs.
 
-[![Agents](https://img.shields.io/badge/Agents-23-blue)](./agents)
+[![Agents](https://img.shields.io/badge/Agents-22-blue)](./agents)
 [![Commands](https://img.shields.io/badge/Commands-16-green)](./commands)
 [![Templates](https://img.shields.io/badge/Templates-4-purple)](./templates)
 [![Hooks](https://img.shields.io/badge/Hooks-0-orange)](./hooks)

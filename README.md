@@ -9,15 +9,60 @@ A collection of Claude Code agents, commands, scripts, templates, notes, and oth
 
 ## 🤖 Specialized Agents
 
-Expert agents provide domain-specific knowledge and methodologies for various development and documentation tasks. These agents cover areas like software architecture, Python/TypeScript development, CLI tools, documentation strategy, learning theory, and critical thinking frameworks. Each agent brings specialized expertise to help solve specific problems rather than providing generic assistance.
+| Agent | Description |
+|-------|-------------|
+| [Adult Learning Theory Expert](agents/adult-learning-theory-expert.md) | Specializes in educational methodologies and adult learning principles for technical documentation and training materials. |
+| [Agent Creator](agents/agent-creator.md) | Helps design and build new specialized agents with appropriate expertise and capabilities. |
+| [Bash Automation Expert](agents/bash-automation-expert.md) | Provides guidance on shell scripting, automation workflows, and command-line tool development. |
+| [Blooms Taxonomy Expert](agents/blooms-taxonomy-expert.md) | Applies educational taxonomy frameworks to structure learning objectives and content organization. |
+| [Changelog Manager](agents/changelog-manager.md) | Assists with version control documentation, release notes, and change tracking. |
+| [Changelog Master](agents/changelog-master.md) | Advanced changelog creation and management with best practices and automation strategies. |
+| [Claude MD Compliance Checker](agents/claude-md-compliance-checker.md) | Ensures documentation follows Claude's markdown formatting and compliance requirements. |
+| [CLI Developer](agents/cli-developer.md) | Specializes in command-line interface design, user experience, and tool development. |
+| [Code Quality Pragmatist](agents/code-quality-pragmatist.md) | Balances code quality standards with practical development constraints and team productivity. |
+| [Design Thinking Expert](agents/design-thinking-expert.md) | Applies human-centered design methodologies to software architecture and user experience. |
+| [Docs Dependency Manager](agents/docs-dependency-manager.md) | Manages documentation dependencies, cross-references, and content relationships. |
+| [File Topic Analyzer](agents/file-topic-analyzer.md) | Analyzes file content to identify topics, themes, and content organization opportunities. |
+| [Git Workflow Manager](agents/git-workflow-manager.md) | Provides guidance on Git workflows, branching strategies, and repository management. |
+| [Knowledge Synthesizer](agents/knowledge-synthesizer.md) | Combines information from multiple sources to create comprehensive, coherent documentation. |
+| [Lateral Thinking Expert](agents/lateral-thinking-expert.md) | Applies creative problem-solving approaches to technical challenges and system design. |
+| [Paul Elder Framework Expert](agents/paul-elder-framework-expert.md) | Uses critical thinking frameworks to analyze problems and evaluate solutions. |
+| [Python Engineer](agents/python-engineer.md) | Specializes in Python development, best practices, and code architecture. |
+| [Readme Expert](agents/readme-expert.md) | Creates comprehensive, user-friendly README files and project documentation. |
+| [Simplex Thinking Expert](agents/simplex-thinking-expert.md) | Applies systematic problem-solving methodologies to complex technical challenges. |
+| [Software Architect](agents/software-architect.md) | Provides guidance on system design, architecture patterns, and technical decision-making. |
+| [TypeScript Engineer](agents/typescript-engineer.md) | Specializes in TypeScript development, type systems, and modern JavaScript practices. |
+| [Ultrathink Debugger](agents/ultrathink-debugger.md) | Advanced debugging methodologies and systematic problem-solving approaches. |
 
 ## 💬 Custom Commands
 
-Commands automate common development and documentation tasks to improve productivity. These include creating scripts, commands, and prompts, updating existing components, generating folder documentation, and extracting essential information from content. Each command streamlines repetitive workflows while maintaining quality and consistency.
+| Command | Description |
+|---------|-------------|
+| [Analyze Repo Changes Update Docs](commands/analyze-repo-changes-update-docs.md) | Analyzes repository changes and automatically updates relevant documentation. |
+| [Create Agent](commands/create-agent.md) | Generates new specialized agent files with appropriate structure and capabilities. |
+| [Create Bash Script](commands/create-bash-script.md) | Creates shell scripts with proper error handling, documentation, and best practices. |
+| [Create Command](commands/create-command.md) | Generates new command files with standardized structure and functionality. |
+| [Create Prompt](commands/create-prompt.md) | Creates prompt templates for consistent AI interactions and workflows. |
+| [Create Python Script](commands/create-python-script.md) | Generates Python scripts with proper structure, error handling, and documentation. |
+| [Enhance](commands/enhance.md) | Improves existing content by applying best practices and optimization techniques. |
+| [Extract Essential Information](commands/extract-essential-information.md) | Pulls key information from content to create summaries and highlights. |
+| [Extract Examples](commands/extract-examples.md) | Identifies and extracts code examples and usage patterns from documentation. |
+| [Folder Readme](commands/folder-readme.md) | Generates README files for folders to improve navigation and understanding. |
+| [Generate Readme](commands/generate-readme.md) | Creates comprehensive README files for projects and repositories. |
+| [Git Repo Info](commands/git-repo-info.md) | Extracts and displays repository information and statistics. |
+| [Improve Command](commands/improve-command.md) | Enhances existing commands with better functionality and user experience. |
+| [Update Agent](commands/update-agent.md) | Updates agent files with new capabilities or improved functionality. |
+| [Update Command](commands/update-command.md) | Modifies existing commands to add features or fix issues. |
+| [Update Script](commands/update-script.md) | Updates script files with improvements and bug fixes. |
 
 ## 🧩 Templates
 
-Templates provide standardized structures for creating new components consistently. The agent template offers a comprehensive framework for building specialized agents, while other templates (command, hook, prompt) provide starting points for different types of extensions. These templates help maintain consistency and quality across the toolbox.
+| Template | Description |
+|----------|-------------|
+| [Agent Template](templates/agent.md) | Comprehensive framework for building specialized agents with consistent structure and capabilities. |
+| [Command Template](templates/command.md) | Standardized structure for creating new command files with proper formatting and organization. |
+| [Hook Template](templates/hook.md) | Template for creating Git hooks and automation workflows. |
+| [Prompt Template](templates/prompt.md) | Template for creating consistent AI prompt structures and interactions. |
 
 ## 🤝 Contributing
 

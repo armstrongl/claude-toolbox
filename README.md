@@ -59,10 +59,7 @@ A collection of Claude Code agents, commands, scripts, templates, notes, and oth
 
 | Template | Description |
 |----------|-------------|
-| [Agent Template](templates/agent.md) | Comprehensive framework for building specialized agents with consistent structure and capabilities. |
-| [Command Template](templates/command.md) | Standardized structure for creating new command files with proper formatting and organization. |
-| [Hook Template](templates/hook.md) | Template for creating Git hooks and automation workflows. |
-| [Prompt Template](templates/prompt.md) | Template for creating consistent AI prompt structures and interactions. |
+| [Agent](templates/agent.md) | Comprehensive framework for building specialized agents with consistent structure and capabilities. |
 
 ## 🤝 Contributing
 
